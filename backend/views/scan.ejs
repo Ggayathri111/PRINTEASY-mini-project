@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="form-container">
+        <h2>qrcode</h2>
+         <form action="/scan" method="GET">
+    <input type="text" name="code" placeholder="Enter code" required>
+    <button type="submit">Find Document</button>
+  </form>
+        <% if (result) { %>
+            <h2>Document Found</h2>
+            <p><strong>Filename:</strong> <%= result.filename %></p>
+            <p><strong>URL:</strong> <a href="<%= result.url %>"><%= result.url %></a></p>
+            <p><strong>Tag:</strong> <%= result.tag %></p>
+          <% } else if (error) { %>
+            <p><%= error %></p>
+          <% } %>
+
+    </div>
+</body>
+</html>
