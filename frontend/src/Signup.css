@@ -1,0 +1,87 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1e1e1e; /* Dark background */
+    margin: 0; /* Remove default margin */
+    height: 100vh;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5)
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height */
+}
+
+.form-container {
+    background-color: #1e1e1e; /* Dark card background */
+    border-radius: 10px;
+    padding: 20px;
+    
+    text-align: center;
+    width: 90%;
+    max-width: 800vh;
+   
+    height: 100%; /* Full height */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center;
+    
+}
+
+h2 {
+    color: #ffffff; /* White text for heading */
+}
+
+input {
+    width: 100%;
+    padding: 10px 0; /* Adjusted padding for top and bottom */
+    margin-bottom: 15px;
+    border: none; /* Removed border */
+    border-bottom: 2px solid #333333; /* Added bottom border */
+    background-color: transparent; /* Made background transparent */
+    color: #ffffff; /* White text color */
+}
+
+/* Placeholder styling */
+input::placeholder {
+    color: #aaaaaa; /* Light gray for placeholder text */
+}
+
+/* Remove outline on focus */
+input:focus {
+    outline: none; /* Removes the default outline */
+}
+
+/* Styling for hover effect - no box effect */
+input:hover {
+    border-bottom-color: #6200ea; /* Change bottom border color on hover */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #6200ea; /* Button color */
+    color: #ffffff; /* Button text color */
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #3700b3; /* Darker shade on hover */
+}
+
+/* Link styling for Sign Up */
+a {
+    color: white; /* Change link color to white */
+}
+
+.text-white {
+    color: #ffffff; /* Solid white color */
+}
+.mb-0{
+    color: #ffffff; 
+}
+.signup{
+    color:#6200ea
+}
